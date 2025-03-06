@@ -1,7 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useState } from 'react';
-import { ArrowUpRight } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -37,7 +36,7 @@ export default function Home() {
           <p className="text-lg text-gray-700 leading-relaxed text-center">
             I am a Node Operator with a passion for sharing the latest updates on cryptocurrency news, yield farming, decentralized finance (DeFi), and airdrop strategies. My mission is to help the community stay informed and take advantage of the opportunities in the fast-evolving world of crypto.
           </p>
-          <div className="grid grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-blue-600 font-bold">5+</span>
@@ -140,7 +139,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-3">Email Me</h3>
                 <a href="mailto:erpextxt@gmail.com" className="text-blue-600 hover:underline flex items-center justify-center">
                   erpextxt@gmail.com
-                  <ArrowUpRight size={16} className="ml-1" />
+                  <span className="ml-1">↗</span>
                 </a>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg text-center">
@@ -205,7 +204,7 @@ function ProjectCard({ projectNumber, title, description, imageSrc, tags }) {
         
         <button className={`text-blue-600 text-sm font-semibold flex items-center transition-all duration-300 ${isHovered ? 'text-blue-800' : ''}`}>
           View details
-          <ArrowUpRight size={16} className="ml-1" />
+          <span className="ml-1">→</span>
         </button>
       </div>
     </div>
